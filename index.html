@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lakshmi Preethi T | Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background:#f4f6fb;
+    color:#1f2937;
+    display:flex;
+}
+
+.sidebar{
+    width:250px;
+    height:100vh;
+    background:white;
+    position:fixed;
+    padding:40px 20px;
+    box-shadow:2px 0 10px rgba(0,0,0,0.05);
+}
+
+.sidebar h2{
+    text-align:center;
+    margin-bottom:40px;
+    color:#1e3a8a;
+}
+
+.sidebar a{
+    display:block;
+    margin:15px 0;
+    text-decoration:none;
+    color:#374151;
+    padding:10px;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.sidebar a:hover{
+    background:#e0e7ff;
+    color:#1e3a8a;
+}
+
+.content{
+    margin-left:250px;
+    padding:60px;
+    width:100%;
+}
+
+.hero h1{
+    font-size:38px;
+    color:#1e3a8a;
+}
+
+.hero p{
+    margin-top:10px;
+    font-size:18px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:8px 18px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:20px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#1e40af;
+}
+
+section{
+    margin-top:60px;
+}
+
+h2{
+    margin-bottom:20px;
+    color:#1e3a8a;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    margin-bottom:20px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.05);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.skill-group h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #1e3a8a;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tags span {
+    background: #eef2ff;
+    color: #1e3a8a;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.skill-tags span:hover {
+    background: #2563eb;
+    color: white;
+}
+
+.achievements{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.contact-box{
+    text-align:center;
+}
+
+.contact-box h3{
+    color:#1e3a8a;
+    margin-bottom:10px;
+    font-size:16px;
+}
+
+.contact-box a{
+    color:#1f2937;
+    text-decoration:none;
+    font-weight:500;
+    word-break:break-word;
+}
+
+.contact-box a:hover{
+    color:#2563eb;
+}
+ 
+footer{
+    text-align:center;
+    margin-top:40px;
+    color:#6b7280;
+}
+
+@media(max-width:768px){
+    .sidebar{
+        display:none;
+    }
+
+    .content{
+        margin-left:0;
+        padding:30px;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#contact">Contact</a>
+</div>
+
+<div class="content">
+
+    <div class="hero">
+        <h1>Lakshmi Preethi T</h1>
+        <p>Full Stack Developer </p>
+        <a href="resume/lakshmipreethi(181).pdf" download class="btn">Download Resume</a>
+    </div>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="card">
+            B.Tech IT student (CGPA: 8.59/10) with hands-on experience in Full Stack Development,
+            Cloud Computing, and Machine Learning. Seeking an entry-level Software Developer role 
+            in a product-based company.
+        </div>
+    </section>
+
+    <section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="card skills-container">
+
+        <div class="skill-group">
+            <h3>Programming Languages</h3>
+            <div class="skill-tags">
+                <span>Python</span>
+                <span>Java</span>
+                <span>C</span>
+                <span>JavaScript</span>
+            </div>
+        </div>
+
+        <div class="skill-group">
+            <h3>Frontend Development</h3>
+            <div class="skill-tags">
+                <span>React.js</span>
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>Tailwind CSS</span>
+            </div>
+        </div>
+
+        <div class="skill-group">
+            <h3>Backend Development</h3>
+            <div class="skill-tags">
+                <span>Node.js</span>
+                <span>Firebase</span>
+            </div>
+        </div>
+
+        <div class="skill-group">
+            <h3>Cloud & Tools</h3>
+            <div class="skill-tags">
+                <span>AWS (Basics)</span>
+                <span>Git & GitHub</span>
+                <span>VS Code</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <section id="experience">
+        <h2>Internship Experience</h2>
+
+        <div class="card">
+            <strong>AI/ML Intern – InternPe</strong><br>
+            Built classification models using Scikit-learn achieving high accuracy after 
+            preprocessing and feature engineering.
+        </div>
+
+        <div class="card">
+            <strong>Web Development Intern – Tek Pyramid</strong><br>
+            Developed 10+ responsive web pages improving load speed by 20% using React.js.
+        </div>
+
+        <div class="card">
+            <strong>Cloud Intern – Kaashiv Infotech</strong><br>
+            Developed serverless functions using AWS Lambda improving pipeline performance by 18%.
+        </div>
+
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="card">
+            <strong>EchoRush</strong><br>
+            Game-based interactive learning platform with user progress tracking.   
+        </div>
+
+        <div class="card">
+            <strong>EV Gas Detection System</strong><br>
+            IoT-based mobile app with Firebase real-time alerts.
+        </div>
+
+    </section>
+
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <div class="achievements">
+            <div class="card">CGPA: 8.59/10</div>
+            <div class="card">3+ Internships Completed</div>
+            <div class="card">3+ Front-end Projects</div>
+           
+        </div>
+    </section>
+
+<section id="contact">
+    <h2>Contact</h2>
+
+    <div class="contact-grid">
+
+        <div class="card contact-box">
+            <h3>Email</h3>
+            <a href="mailto:lakshmipreethi2505@gmail.com">
+                lakshmipreethi2505@gmail.com
+            </a>
+        </div>
+
+        <div class="card contact-box">
+            <h3>Phone</h3>
+            <a href="tel:+917305234519">
+                +91 73052 34519
+            </a>
+        </div>
+
+        <div class="card contact-box">
+            <h3>LinkedIn</h3>
+            <a href="https://www.linkedin.com/in/lakshmi-preethi-t?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                linkedin.com/in/lakshmi-preethi-t
+            </a>
+        </div>
+
+    </div>
+</section>
+
+    <footer>
+              © 2026 Lakshmi Preethi T | Built with HTML & CSS
+    </footer>
+
+</div>
+
+</body>
+</html>
